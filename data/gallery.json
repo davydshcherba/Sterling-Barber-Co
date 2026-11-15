@@ -1,0 +1,10 @@
+[
+  { "src": "/images/hero.jpg", "w": 1600, "h": 900, "alt": "Vintage barbershop interior with red leather chairs", "caption": "The shop floor", "span": "wide" },
+  { "src": "/images/apron-barber.jpg", "w": 1200, "h": 1800, "alt": "Barber in a denim apron cutting a client's hair", "caption": "At the chair", "span": "tall" },
+  { "src": "/images/cut-fade.jpg", "w": 1600, "h": 1067, "alt": "Close-up of a fade haircut with clippers", "caption": "Skin fade", "span": "" },
+  { "src": "/images/chair.jpg", "w": 1600, "h": 1067, "alt": "Tufted brown leather barber chair with chrome", "caption": "Leather and chrome", "span": "" },
+  { "src": "/images/razor-detail.jpg", "w": 1201, "h": 1800, "alt": "Barber shaving a beard line with a straight razor", "caption": "Razor line-up", "span": "tall" },
+  { "src": "/images/pomade.jpg", "w": 1600, "h": 1067, "alt": "Barber styling a side-parted haircut from above", "caption": "Classic side part", "span": "" },
+  { "src": "/images/neck-razor.jpg", "w": 1600, "h": 1067, "alt": "Barber cleaning the neckline with a razor", "caption": "Neckline", "span": "" },
+  { "src": "/images/clipper-cut.jpg", "w": 1200, "h": 1800, "alt": "Barber trimming a client's short hair with clippers", "caption": "Crisp finish", "span": "tall" }
+]

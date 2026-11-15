@@ -1,0 +1,51 @@
+[
+  {
+    "id": "classic-haircut",
+    "name": "Classic Haircut",
+    "description": "Scissor and clipper cut, neck shave and a styled finish.",
+    "price": 18,
+    "duration": 45
+  },
+  {
+    "id": "skin-fade",
+    "name": "Skin Fade",
+    "description": "A seamless fade down to the skin, blended and finished by hand.",
+    "price": 22,
+    "duration": 60
+  },
+  {
+    "id": "beard-trim",
+    "name": "Beard Trim",
+    "description": "Shaping, line-up and a conditioning oil.",
+    "price": 14,
+    "duration": 30
+  },
+  {
+    "id": "hot-towel-shave",
+    "name": "Hot Towel Shave",
+    "description": "Steamed towels, lathered brush and a straight razor shave.",
+    "price": 20,
+    "duration": 45
+  },
+  {
+    "id": "haircut-beard",
+    "name": "Haircut + Beard",
+    "description": "Any haircut with a full beard trim. Our most popular visit.",
+    "price": 30,
+    "duration": 75
+  },
+  {
+    "id": "kids-cut",
+    "name": "Kids Cut",
+    "description": "For boys under 12. Patient hands, short chair time.",
+    "price": 14,
+    "duration": 30
+  },
+  {
+    "id": "grey-blending",
+    "name": "Grey Blending",
+    "description": "Subtle colour that softens grey without a dyed look.",
+    "price": 16,
+    "duration": 30
+  }
+]

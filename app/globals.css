@@ -1,0 +1,114 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-cream: #f3ead8;
+  --color-cream-deep: #e9dcc0;
+  --color-ink: #2a1f1a;
+  --color-ink-soft: #5a493e;
+  --color-board: #221813;
+  --color-barber-red: #a6262b;
+  --color-barber-blue: #1f3a6b;
+  --color-brass: #b08d57;
+  --color-brass-light: #d6b987;
+  --font-display: var(--font-playfair), Georgia, serif;
+  --font-sign: var(--font-oswald), Impact, sans-serif;
+  --font-sans: var(--font-inter), system-ui, sans-serif;
+}
+
+:root {
+  /* Light paper grain, tiled. Static, no gradients. */
+  --paper: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .16 0 0 0 0 .12 0 0 0 0 .1 0 0 0 .07 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+@layer base {
+  html {
+    scroll-padding-top: 5rem;
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
+  }
+  body {
+    background-color: var(--color-cream);
+    background-image: var(--paper);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+  body:has(dialog[open]) {
+    overflow: hidden;
+  }
+  :focus-visible {
+    outline: 3px solid var(--color-barber-blue);
+    outline-offset: 3px;
+  }
+  .dark-zone :focus-visible {
+    outline-color: var(--color-brass-light);
+  }
+}
+
+@layer components {
+  .paper-deep {
+    background-color: var(--color-cream-deep);
+    background-image: var(--paper);
+  }
+
+  .btn {
+    @apply inline-flex min-h-12 items-center justify-center gap-2 border-2 px-6 py-2 font-sign text-base uppercase tracking-[.16em] transition-colors disabled:cursor-not-allowed disabled:opacity-45;
+  }
+  .btn-sm {
+    @apply min-h-10 px-4 text-sm;
+  }
+  .btn-red {
+    @apply border-barber-red bg-barber-red text-cream hover:border-ink hover:bg-ink disabled:hover:border-barber-red disabled:hover:bg-barber-red;
+  }
+  .btn-outline {
+    @apply border-ink text-ink hover:bg-ink hover:text-cream;
+  }
+  .btn-cream {
+    @apply border-cream text-cream hover:bg-cream hover:text-ink;
+  }
+
+  /* Old shop-sign board: wood frame around a dark panel. */
+  .board {
+    background-color: var(--color-board);
+    border: 12px solid #4a3121;
+    box-shadow: inset 0 0 0 2px var(--color-brass);
+  }
+
+  .reveal {
+    opacity: 0;
+    transform: translateY(18px);
+    transition:
+      opacity 0.6s ease,
+      transform 0.6s ease;
+  }
+  .reveal.is-in {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Leaflet: warm the map tiles to match the paper palette. */
+.leaflet-tile-pane {
+  filter: sepia(0.5) saturate(0.8) contrast(0.95);
+}
+.leaflet-container {
+  font-family: var(--font-sans);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+}

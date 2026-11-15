@@ -1,0 +1,38 @@
+[
+  {
+    "id": "viktor",
+    "name": "Viktor Hrytsak",
+    "role": "Founder, Master Barber",
+    "specialty": "Classic cuts and razor work",
+    "bio": "Opened the shop in 2014 and still takes the first chair every morning.",
+    "photo": "/images/barber-cap.jpg",
+    "position": "75% 40%"
+  },
+  {
+    "id": "taras",
+    "name": "Taras Melnyk",
+    "role": "Senior Barber",
+    "specialty": "Skin fades and modern crops",
+    "bio": "Clipper-work specialist with a calm, precise approach.",
+    "photo": "/images/apron-barber.jpg",
+    "position": "20% 28%"
+  },
+  {
+    "id": "oleh",
+    "name": "Oleh Savchuk",
+    "role": "Barber",
+    "specialty": "Beards and hot towel shaves",
+    "bio": "Believes a good shave should never be rushed.",
+    "photo": "/images/clipper-cut.jpg",
+    "position": "20% 20%"
+  },
+  {
+    "id": "dmytro",
+    "name": "Dmytro Boyko",
+    "role": "Barber",
+    "specialty": "Fades, line-ups and grey blending",
+    "bio": "Sharp edges, clean lines and a steady hand.",
+    "photo": "/images/tattoo-fade.jpg",
+    "position": "60% 45%"
+  }
+]
